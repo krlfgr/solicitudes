@@ -17,8 +17,12 @@
         <br>
         <button type="submit">Enviar</button>
     </form>
-
-
+    <h2>listado de estudiantes</h2>
+    <ul>
+        {% for estudiante in listado %}
+        <li>{{ estudiante.nombre }} - {{ estudiante.correo }}</li>
+        {% endfor %}
+    </ul>
 
 
 </body>
